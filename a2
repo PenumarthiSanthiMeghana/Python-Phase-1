@@ -1,0 +1,13 @@
+def getmaximumpoints(reward):
+    c=0
+    rs=0
+    reward.sort(reverse=true)
+    for i in reward:
+        if (i-c)<=0:
+            break
+        else:
+            res=res+(i-c)
+            c+=1
+            print(res,c)
+    return res
+        

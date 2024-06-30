@@ -1,0 +1,9 @@
+l=['register cd ab$','register ab cd$','register cd bc$','register cd ab$','register ab ab$','register sk tv$']
+n=len(l)
+d={}
+for i in range(n):
+    for j in range(n-i,n):
+        if l[i]==l[j]:
+            print("username already exists")
+        else:
+            print("registered succesffully")
